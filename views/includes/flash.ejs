@@ -1,0 +1,23 @@
+<!-- It contain success and failure flsh message code -->
+ <!-- <%= success %>  using for flash message  -->
+
+<!-- Success flash -->
+ <% if(success && success.length){%>  <!--also checking success length bcz it return length to zero and false -->
+
+ <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert"><!-- classes are from bootstrap -->
+<%= success%>
+ <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<%}%>
+
+
+<!-- Error flash -->
+ <% if(error && error.length){%>  <!--also checking success length bcz it return length to zero and false -->
+
+ <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert"><!-- classes are from bootstrap -->
+<%= error %>
+ <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<%}%>

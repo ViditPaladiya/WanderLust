@@ -1,0 +1,25 @@
+<!-- Here we create how error to be shown to the users in better manne which are upcoming from Exprees error -->
+
+<!-- 
+All error we need to enter by run and run 
+validate by user frontend -bootstrap
+validate by server(postman) - Express Error  2 ways to tackle those error - try catch block / WrapAsync 
+showing error message in good manner without closing the server for lookup we use error.ejs
+
+
+and for database 
+if listings not found if any client enter from postman to the datbase and eter then listings not found 
+But What if they forgot to enter any desc / title etc from hopscoch bcoz from frontend our bootstrap and html takecare easilyy 
+
+ -->
+
+
+<% layout("/layouts/boilerplate")%>
+<div class="row mt-5">
+<div class="alert alert-danger " role="alert">
+<h5 class="alert-heading"><%= err.message %></h5>
+</div>
+</div>
+
+
+

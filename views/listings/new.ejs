@@ -1,0 +1,102 @@
+<% layout("/layouts/boilerplate") -%>
+
+     <body>
+
+
+          <div class="row">
+
+               <div class="col-8 offset-2">
+                    <!--cols-8 because it only take the 8/12 from the page colms and offset means it leave space of 2 from both side and make this form in middle  -->
+
+
+
+
+                    <h1>Create New Listing </h1>
+
+                    <form method="POST" action="/listings" class="needs-validation " novalidate  enctype="multipart/form-data">  <!--We add novalidate because we dont need browsers message support for out form to use bootstrap -->
+                         <div class="mb-3 ">
+                         
+                              <label for="title" class="form-label ">Title</label>
+                              <input name="listing[title]" placeholder="Enter Title" type="text"
+                                   class="form-control " required /><!-- listing[title]  using this syntax to make object as listing and its key is title, description etc to save the code and time both in app.js while fetching form datas  "Key valure pair" -->
+                         
+                                   <div class="valid-feedback">Looks Good!</div>
+                                   <div class="invalid-feedback">Enter valid data </div>
+                         </div>
+
+
+
+                         <div class="mb-3">
+                              <label for="description" class="form-label">Description</label>
+                              <textarea name="listing[description]" placeholder="Enter Description"
+                                   class="form-control " required></textarea>
+                                    <div class="valid-feedback">Looks Good!</div>
+                                   <div class="invalid-feedback">Enter valid data </div>
+                         </div>
+
+                         <div class="row">
+
+                         </div>
+                         <!-- <div class="mb-3">
+                              <label for="image" class="form-label">ImageURL</label>
+                              <input name="listing[image][url]" class="form-control" />
+ 
+                         </div> -->
+
+
+                         <div class="mb-3">
+                              <label for="image" class="form-label">Upload Image</label>
+                              <input name="listing[image]" type="file" class="form-control" required/>
+ 
+                         </div>
+
+
+
+
+
+                         <!-- To bring Price and Country in one line we make another Div  -->
+
+                         <div class="row">
+
+                              <div class="mb-3 col-md-4">
+                                   <label for="price" class="form-label">Price</label>
+                                   <input name="listing[price]" placeholder="12000"
+                                        class="form-control"  required/>
+                                         <div class="valid-feedback">Looks Good!</div>
+                                   <div class="invalid-feedback">Enter valid data </div>
+                              </div>
+
+                              <div class="mb-3 col-md-8">
+                                   <label for="country" class="form-label">Country</label>
+                                   <input name="listing[country]" placeholder="India" class="form-control" required/>
+                                    <div class="valid-feedback">Looks Good!</div>
+                                   <div class="invalid-feedback">Enter valid data </div>
+
+                              </div>
+                         </div>
+
+
+
+
+
+                         <div class="mb-3">
+                              <label for="location" class="form-label">Location</label>
+                              <input name="listing[location]" placeholder="Jaipur,Rajasthan." type="text"
+                                   class="form-control" required/>
+                                    <div class="valid-feedback">Looks Good!</div>
+                                   <div class="invalid-feedback">Enter valid data </div>
+
+                         </div>
+
+
+
+
+
+                         <button class="btn btn-danger">Add</button>
+                         <br>
+                         <br>
+
+                    </form>
+               </div>
+          </div>
+     </body>

@@ -1,0 +1,45 @@
+<!-- Sig-up page when user redirect to the /signup -->
+
+<% layout("/layouts/boilerplate") -%>
+
+
+    <div class="row mt-3">
+
+        <div class="col-6 offset-3">
+            <!--cols-8 because it only take the 8/12 from the page colms and offset means it leave space of 2 from both side and make this form in middle  -->
+            <h1>Login on Wanderlust</h1>
+            <br>
+
+            <form action="/login" method="POST" class="needs-validation" novalidate>
+
+                <div class="mb-3 ">
+
+                    <label for="username" class="form-label ">Enter Title</label>
+                    <input name="username" placeholder="Enter username" type="text" class="form-control "
+                        required /><!-- listing[title]  using this syntax to make object as listing and its key is title, description etc to save the code and time both in app.js while fetching form datas  "Key valure pair" -->
+
+                    
+                </div>
+
+
+
+                <div class="mb-3 ">
+
+                    <label for="password" class="form-label ">Enter Password</label>
+                    <input name="password" placeholder="Enter password" type="password" class="form-control "
+                        required /><!-- listing[title]  using this syntax to make object as listing and its key is title, description etc to save the code and time both in app.js while fetching form datas  "Key valure pair" -->
+
+                  
+                </div>
+
+                <button class="btn btn-danger">Add</button>
+                <br>
+                <br>
+
+            </form>
+
+        </div>
+    </div>
+
+
+ 

@@ -1,0 +1,96 @@
+<% layout("/layouts/boilerplate") -%>
+
+     <body>
+
+
+
+          <div class="row">
+
+               <div class="col-8 offset-2">
+                    <!--cols-8 because it only take the 8/12 from the page colms and offset means it leave space of 2 from both side and make this form in middle  -->
+
+
+
+
+
+
+
+
+                    <h1>Edit </h1>
+                    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation"
+                         novalidate enctype="multipart/form-data"> <!--   enctype="multipart/form-data" = is for multi types of datas like pdf png jpg -->
+
+                         <div class="mb-3">
+
+                              <label for="title" class="form-label">Title</label>
+                              <input name="listing[title]" value="<%= listing.title%> " class="form-control" type="text"
+                                   required><!-- listing[title]  using this syntax to make object as listing and its key is title, description etc to save the code and time both in app.js while fetching form datas  "Key valure pair" -->
+                              <div class="valid-feedback">Looks Good!</div>
+                              <div class="invalid-feedback">Enter valid data </div>
+                         </div>
+
+                         <div class="mb-3">
+
+                              <label for="title" class="form-label">Description</label>
+                              <textarea name="listing[description]" class="form-control" type="text"
+                                   required><%= listing.description%> </textarea>
+                              <div class="valid-feedback">Looks Good!</div>
+                              <div class="invalid-feedback">Enter valid data </div>
+
+                         </div>
+
+
+                         <div class= "mb-3">
+                         
+                              <label for="title" class="form-label">Your Image </label><br>
+                            <img src="<%= listing.image.url%>" class="img-fluid" style="max-width: 300px; height: auto;"/>
+                         </div>
+
+                         <div class="mb-3">
+
+                              <label for="title" class="form-label">Upload new image</label>
+                              <input name="listing[image]"  class="form-control"
+                                   type="file" ><!--  value="<%= listing.image.url %>"  //value= listing.image  this listing contains the id coming from app.js 5th route -->
+                      
+                         </div>
+
+                         <div class="mb-3">
+
+                              <label for="title" class="form-label">Price</label>
+                              <input name="listing[price]" value="<%= listing.price%> " class="form-control" required>
+                              <div class="valid-feedback">Looks Good!</div>
+                              <div class="invalid-feedback">Enter valid data </div>
+
+                         </div>
+
+                         <div class="mb-3">
+
+                              <label for="title" class="form-label">Location</label>
+                              <input name="listing[location]" value="<%= listing.location%> " class="form-control"
+                                   type="text" required>
+                              <div class="valid-feedback">Looks Good!</div>
+                              <div class="invalid-feedback">Enter valid data </div>
+
+                         </div>
+
+
+                         <div class="mb-3">
+
+                              <label for="title" class="form-label">Country</label>
+                              <input name="listing[country]" class="form-control" value="<%= listing.country%> "
+                                   required>
+                              <div class="valid-feedback">Looks Good!</div>
+                              <div class="invalid-feedback">Enter valid data </div>
+
+
+                         </div>
+
+                         <button class="btn btn-danger">Edit</button>
+                         <br>
+                         <br>
+                    </form>
+               </div>
+          </div>
+     </body>
+
+     </html>
