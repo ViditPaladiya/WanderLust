@@ -73,7 +73,7 @@
     "express": "^5.1.0",
 
 
-    "express-sesssion": "^1.15.5",
+    "express-session": "^1.18.1",
 
 
     "joi": "^17.13.3",
@@ -100,10 +100,7 @@
     "passport-local-mongoose": "^8.0.0"
 
 
-  },
-
-
-  "devDependencies": {}
+  }
 
 
 }
