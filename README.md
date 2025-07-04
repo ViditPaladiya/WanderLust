@@ -14,8 +14,10 @@ It’s built with Node.js, Express, MongoDB, and EJS and includes robust user au
 
 ✅ Flash messages and form validation
 
-✅ Fully responsive UI with Bootstrap
+✅ Fully responsive UI with Bootstrap 
 
+
+🚀 **Live Demo:** [https://wanderlust.onrender.com](https://wanderlust.onrender.com)
 
 
 ⚙️ Tech Stack
