@@ -22,6 +22,7 @@ It’s built with Node.js, Express, MongoDB, and EJS and includes robust user au
 
 
 ⚙️ Tech Stack
+
 Node.js & Express.js — Backend server and routing
 
 MongoDB & Mongoose — Database and ODM
@@ -47,6 +48,7 @@ Bootstrap — Frontend styling
 
 
 🚀 Getting Started
+
 1️⃣ Clone the repository
 
 2️⃣ Install dependencies
@@ -60,9 +62,13 @@ Visit: http://localhost:8080
 
 
 ⚡ Deployment Tips
+
 ✅ Use MongoDB Atlas for production.
+
 ✅ Store sensitive API keys in environment variables.
+
 ✅ Configure Cloudinary and Mapbox for cloud hosting.
+
 ✅ Use Heroku or Render for hosting your app.
 
 
