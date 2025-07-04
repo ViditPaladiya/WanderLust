@@ -17,7 +17,7 @@ It’s built with Node.js, Express, MongoDB, and EJS and includes robust user au
 ✅ Fully responsive UI with Bootstrap 
 
 
-🚀 **Live Demo:** [https://wanderlust.onrender.com](https://wanderlust.onrender.com)
+🚀 **Live Demo:** [https://wanderlust.com](https://wanderlust-2e5k.onrender.com)
 
 
 ⚙️ Tech Stack
