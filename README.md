@@ -4,6 +4,7 @@ Wanderlust is a full-stack web application for exploring, creating, and booking 
 It’s built with Node.js, Express, MongoDB, and EJS and includes robust user authentication, image uploads, maps, and reviews.
 
 ✨ Features
+
 ✅ User registration and authentication (Passport.js)
 
 ✅ Create, edit, delete campgrounds/stays
